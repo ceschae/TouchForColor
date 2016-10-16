@@ -64,7 +64,7 @@ public class TouchForColorMain {
 		String filename = "result.txt";
 		PrintStream out = new PrintStream(new File(filename));
 		for (BrailleLetter letter : braille) {
-			out.println(letter.toString() + "\n");
+			out.println(letter.toString());
 		}
 		System.out.println(new BrailleLetter('a', new boolean[6]));
 		System.out.println("I made it to the end!");

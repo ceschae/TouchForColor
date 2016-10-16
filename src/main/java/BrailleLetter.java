@@ -8,8 +8,13 @@ public class BrailleLetter {
 	}
 	
 	public String toString() {
-		return "" + raised[0] + " " + raised[1] + "\n" +
-				raised[2] + " " + raised[3] + "\n" +
-				raised[4] + " " + raised[5];
+		String result = "";
+		for (boolean b : raised) {
+			if (b)
+				result += "1 ";
+			else
+				result += "0 ";
+		}
+		return result + "\n";
 	}
 }
